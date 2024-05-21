@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+:root {
+    --dark-one: #000;
+    --dark-two: #151515;
+    --light-one: #fff;
+    --light-two: #b9b9b9;
+    --main-color: #eb4a4a;
+}
+
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    font-size: 1.125rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--light-one);
+    transition: .3s all;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    margin: 0 .2rem;
+    font-size: 1.3rem;
+}
+
+input,
+button {
+    background-color: transparent;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+body {
+    font-family: "Onest", sans-serif;
+    background-color: var(--dark-one);
+}
+
+/* Clases generales */
+
+.section {
+    position: relative;
+    padding: 7rem 0;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 92rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+.title {
+    font-size: 4.5rem;
+    color: var(--light-one);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.title-sm {
+    font-size: 1.75rem;
+    color: var(--light-one);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.text {
+    font-size: 1.125rem;
+    color: var(--light-two);
+    margin: 1.5rem 0;
+    line-height: 1.8;
+}
+
+.btn {
+    background-color: var(--main-color);
+    border-radius: 1px solid var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 1.5rem 2rem;
+    font-weight: 700;
+    transition: .3s all;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--light-one);
+    color: var(--light-one);
+    transform: translateY(.1rem);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.section-header h2 {
+    max-width: 600px;
+}
+
+/* Responsive */
+
+@media (max-width: 1250px) {
+    .section {
+        padding: 4rem 0;
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .title-sm {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .section {
+        padding: 2rem 0;
+    }
+
+    .container {
+        padding: 0 2rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-header h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .section {
+        padding: 2rem 0;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}
